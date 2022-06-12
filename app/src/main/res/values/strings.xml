@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AzatikApp</string>
+    <string name="invalid_permission">invalid permission</string>
+
+    <string name="signature_name">serving_default</string>
+    <string name="dummy">gatau</string>
+    <string name="result">%s %%</string>
+    <string name="presentase" />
+    <string name="batik_name" />
+</resources>

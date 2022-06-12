@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_back"
+            android:background="#8E3200">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNamaBatik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFEBC1"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvNamaLengkap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:textColor="#FFEBC1"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-12dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#ffffe1e1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/tvKategori"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Kategori"
+                        android:textColor="#ffec2d2d"
+                        android:textSize="12sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#ffd0ffdb"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/tvAsalBatik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Asal"
+                        android:textColor="#ff2a7e2f"
+                        android:textSize="12sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#B8E9FF"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+                        android:id="@+id/tvHargaBatik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Usia"
+                        android:textColor="#2196F3"
+                        android:textSize="12sp" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFEBC1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageBatik"
+                        android:layout_width="280dp"
+                        android:layout_height="280dp"
+                        android:layout_gravity="end|center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="-80dp"
+                        android:background="@android:color/transparent"
+                        android:elevation="5dp"
+                        android:scaleType="centerCrop"
+                        app:shapeAppearanceOverlay="@style/circularImageView"
+                        app:srcCompat="@drawable/ic_logo" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="-70dp"
+                        android:layout_marginBottom="50dp"
+                        app:cardBackgroundColor="#D7A86E"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_share"
+                            app:tint="@android:color/white" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="-80dp"
+                        android:background="@drawable/bg_circle_radius_primary"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Batik Description :"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvTutorial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Batik Video Tutorial :"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Details :"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvDesdription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Description :"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvCapstone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Capstone Project :"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabBackTop3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:onClick="playinfo"
+        android:src="@drawable/ic_play"
+        app:layout_anchor="@+id/nestedScrollView2"
+        app:layout_anchorGravity="end|bottom"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
